@@ -79,6 +79,9 @@ Indicators such as the number of active LEDs and light intensity help monitor th
 * Create flows to receive MQTT data and display it on the dashboard.
 * Set up graphs to visualize lux values, active LEDs, and motion detection status.
 
+![FlowFuse](https://github.com/user-attachments/assets/8a706ab9-f2c5-4684-9028-3a31316fd2f4)
+
+
 *Monitoring:*
 
 * Access the FlowFuse dashboard to monitor the system in real-time, view alerts, and adjust parameters as needed.
