@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Georgi Shraibman",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": -26.67,
+      "left": -55.33,
+      "attrs": { "env": "micropython-20230426-v1.20.0" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -182.7,
+      "left": 205.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led-bar-graph",
+      "id": "bargraph1",
+      "top": 15.65,
+      "left": -146.61,
+      "rotate": 180,
+      "attrs": { "color": "lime" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 133.68,
+      "left": -130.68,
+      "rotate": 180,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -188, "left": 136.62, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "ldr1:VCC", "red", [ "v0.54", "h112.58" ] ],
+    [ "esp:GND.1", "ldr1:GND", "black", [ "h0" ] ],
+    [ "esp:D13", "bargraph1:A1", "gold", [ "h-30.04", "v-3.54" ] ],
+    [ "esp:D12", "bargraph1:A2", "gold", [ "h-32.42", "v-3.72" ] ],
+    [ "esp:D14", "bargraph1:A3", "gold", [ "h-35.86", "v-2.07" ] ],
+    [ "esp:D27", "bargraph1:A4", "gold", [ "h-28.67", "v-2.55" ] ],
+    [ "esp:D26", "bargraph1:A5", "gold", [ "h0" ] ],
+    [ "esp:D25", "bargraph1:A6", "gold", [ "h0" ] ],
+    [ "esp:D33", "bargraph1:A7", "gold", [ "h0" ] ],
+    [ "esp:D32", "bargraph1:A8", "gold", [ "h0" ] ],
+    [ "esp:D22", "bargraph1:A10", "gold", [ "h28.1", "v-46.47", "h-157.05", "v65.57" ] ],
+    [ "esp:D23", "bargraph1:A9", "gold", [ "h19.83", "v-27.65", "h-139.41", "v61.17" ] ],
+    [ "bargraph1:C10", "bargraph1:C9", "black", [ "h0" ] ],
+    [ "bargraph1:C9", "bargraph1:C8", "black", [ "h0" ] ],
+    [ "bargraph1:C8", "bargraph1:C7", "black", [ "h0" ] ],
+    [ "bargraph1:C6", "bargraph1:C7", "black", [ "h0" ] ],
+    [ "bargraph1:C6", "bargraph1:C5", "black", [ "h0" ] ],
+    [ "bargraph1:C5", "bargraph1:C4", "black", [ "h0" ] ],
+    [ "bargraph1:C4", "bargraph1:C3", "black", [ "h0" ] ],
+    [ "bargraph1:C3", "bargraph1:C2", "black", [ "h0" ] ],
+    [ "bargraph1:C1", "bargraph1:C2", "black", [ "v0" ] ],
+    [ "r1:1", "esp:GND.2", "black", [ "v-0.43", "h8.92", "v-11.53" ] ],
+    [ "r1:2", "bargraph1:C1", "black", [ "v0.07", "h-12.02", "v-18.05" ] ],
+    [ "esp:D34", "ldr1:AO", "purple", [ "h-16.87", "v-84.03", "h336", "h9.6", "v-9.6" ] ],
+    [ "esp:3V3", "pir1:VCC", "red", [ "h126.83", "v-74.23" ] ],
+    [ "pir1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "esp:D35", "pir1:OUT", "blue", [ "h-7.27", "v-113.03", "h38.4" ] ]
+  ],
+  "dependencies": {}
+}
