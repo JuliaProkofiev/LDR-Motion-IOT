@@ -16,7 +16,8 @@ The ESP32 collects and sends sensor data via the MQTT protocol to a cloud platfo
 
 This system can be expanded to integrate additional sensors and functionalities, such as air quality monitoring or security cameras, making it even more efficient for smart city management.
 
-[![Apresentation]([(https://img.shields.io/youtube/channel/subscribers/:channelId))](https://www.youtube.com/watch?v=w2rhMHTx9N8)
+[![Apresentation](https://img.youtube.com/vi/w2rhMHTx9N8/0.jpg)](https://www.youtube.com/watch?v=w2rhMHTx9N8)
+
 
 ## Features
 
