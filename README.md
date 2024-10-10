@@ -81,12 +81,11 @@ Indicators such as the number of active LEDs and light intensity help monitor th
 
 ![FlowFuse](https://github.com/user-attachments/assets/8a706ab9-f2c5-4684-9028-3a31316fd2f4)
 
-
 *Monitoring:*
 
 * Access the FlowFuse dashboard to monitor the system in real-time, view alerts, and adjust parameters as needed.
 
-![dashboard](https://github.com/user-attachments/assets/5963c883-db01-4e15-a9f7-0321a3ba0e4d)
+![dashboard - menor](https://github.com/user-attachments/assets/a3c3f2dd-0078-4b93-9311-02228cb479a4)
 
 
 ## 🔗 Links
