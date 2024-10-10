@@ -86,6 +86,8 @@ Indicators such as the number of active LEDs and light intensity help monitor th
 
 * Access the FlowFuse dashboard to monitor the system in real-time, view alerts, and adjust parameters as needed.
 
+![dashboard](https://github.com/user-attachments/assets/5963c883-db01-4e15-a9f7-0321a3ba0e4d)
+
 
 ## 🔗 Links
 [![github](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/JuliaProkofiev)
